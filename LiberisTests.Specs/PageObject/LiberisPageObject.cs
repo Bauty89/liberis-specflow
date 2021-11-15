@@ -1,4 +1,6 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
+using System;
 
 namespace LiberisTests.Specs.PageObject
 {
@@ -6,13 +8,13 @@ namespace LiberisTests.Specs.PageObject
     {
         private const string Url = "https://www.liberis.com";
 
-        private readonly IWebDriver driver;
+        private readonly IWebDriver driver; 
 
         public LiberisPageObject(IWebDriver webDriver) => driver = webDriver;
 
-        private IWebElement GetADemoHome => driver.FindElement(By.XPath("//*[@id='site - navigation']/div[1]/a"));
-        private IWebElement GetADemo => driver.FindElement(By.XPath("//*[@id='site - inner - wrapper']/main/section/div[2]/div/div[2]/div/a"));
-        private IWebElement ErrorMessage => driver.FindElement(By.XPath("//*[@id='site - inner - wrapper']/main/section/div[2]/div/div[2]/div/div[2]/div"));
+        private IWebElement GetADemoHome => driver.FindElement(By.XPath("//*[@id='site-navigation']/div[1]/a"));
+        private IWebElement GetADemo => driver.FindElement(By.XPath("//*[@id='site-inner-wrapper']/main/section/div[2]/div/div[2]/div/a"));
+        private IWebElement ErrorMessage => driver.FindElement(By.ClassName("ph-error-inner"));
         
         public void ClickGetADemoHome()
         {
@@ -24,7 +26,17 @@ namespace LiberisTests.Specs.PageObject
             GetADemo.Click();
         }
 
-        public string GetErrorMessage => ErrorMessage.Text;
+        public void Wait()
+        {
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(5));
+            wait.Timeout = TimeSpan.FromSeconds(5);
+
+        }
+
+        public string GetErrorMessage()
+        {
+            return ErrorMessage.Text;
+        }
 
         public void OpenBrowserIfClosed()
         {

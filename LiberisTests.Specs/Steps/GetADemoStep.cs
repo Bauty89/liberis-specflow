@@ -28,8 +28,7 @@ namespace LiberisTests.Specs.Steps
         [Then("I will be prompted with (.*)")]
         public void ThenIllBePrompted(string result)
         {
-            string actualResult = liberisPageObject.GetErrorMessage;
-
+           string actualResult = liberisPageObject.GetErrorMessage();
             actualResult.Should().Be(result);
         }
     }

@@ -113,3 +113,4 @@ C:\Users\aleja\Source\Repos\Ifritzz\liberis-specflow\LiberisTests.Specs\bin\Debu
 C:\Users\aleja\Source\Repos\Ifritzz\liberis-specflow\LiberisTests.Specs\bin\Debug\netcoreapp3.1\WebDriver.Support.dll
 C:\Users\aleja\Source\Repos\Ifritzz\liberis-specflow\LiberisTests.Specs\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
 C:\Users\aleja\Source\Repos\Ifritzz\liberis-specflow\LiberisTests.Specs\bin\Debug\netcoreapp3.1\Utf8Json.dll
+C:\Users\aleja\Source\Repos\Ifritzz\liberis-specflow\LiberisTests.Specs\obj\Debug\netcoreapp3.1\LiberisTests.Specs.csproj.AssemblyReference.cache
