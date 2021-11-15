@@ -1,42 +1,25 @@
-﻿using System;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using TechTalk.SpecFlow;
 
 namespace LiberisTests.Drivers
 
 {
-    public class BrowserDriver : IDisposable
+    public class BrowserDriver
     {
-        private readonly Lazy<IWebDriver> currentWebDriverLazy;
-        private bool isDisposed;
+        private IWebDriver driver;
 
-        public BrowserDriver() => currentWebDriverLazy = new Lazy<IWebDriver>(CreateWebDriver);
+        private readonly ScenarioContext _scenarioContext;
 
-        public IWebDriver Current => currentWebDriverLazy.Value;
+        public BrowserDriver(ScenarioContext scenarioCotnext) => _scenarioContext = scenarioCotnext;
 
-        private IWebDriver CreateWebDriver()
+        public IWebDriver Setup()
         {
-            var chromeDriver = new ChromeDriver();
-
-            return chromeDriver;
+            driver = new ChromeDriver();
+            _scenarioContext.Set(driver, "BrowserDriver");
+            return driver;
         }
 
-
-
-        public void Dispose()
-        {
-            if (isDisposed)
-            {
-                return;
-            }
-
-            if (currentWebDriverLazy.IsValueCreated)
-            {
-                Current.Quit();
-            }
-
-            isDisposed = true;
-        }
 
     }
 }

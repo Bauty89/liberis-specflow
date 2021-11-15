@@ -250,7 +250,6 @@ C:\Users\aleja\Source\Repos\Ifritzz\liberis-specflow\LiberisTests\bin\Debug\netc
 C:\Users\aleja\Source\Repos\Ifritzz\liberis-specflow\LiberisTests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\aleja\Source\Repos\Ifritzz\liberis-specflow\LiberisTests\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
 C:\Users\aleja\Source\Repos\Ifritzz\liberis-specflow\LiberisTests\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\aleja\Source\Repos\Ifritzz\liberis-specflow\LiberisTests\obj\Debug\netcoreapp3.1\LiberisTests.csproj.AssemblyReference.cache
 C:\Users\aleja\Source\Repos\Ifritzz\liberis-specflow\LiberisTests\obj\Debug\netcoreapp3.1\LiberisTests.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\aleja\Source\Repos\Ifritzz\liberis-specflow\LiberisTests\obj\Debug\netcoreapp3.1\LiberisTests.AssemblyInfoInputs.cache
 C:\Users\aleja\Source\Repos\Ifritzz\liberis-specflow\LiberisTests\obj\Debug\netcoreapp3.1\LiberisTests.AssemblyInfo.cs
@@ -259,3 +258,4 @@ C:\Users\aleja\Source\Repos\Ifritzz\liberis-specflow\LiberisTests\obj\Debug\netc
 C:\Users\aleja\Source\Repos\Ifritzz\liberis-specflow\LiberisTests\obj\Debug\netcoreapp3.1\LiberisTests.dll
 C:\Users\aleja\Source\Repos\Ifritzz\liberis-specflow\LiberisTests\obj\Debug\netcoreapp3.1\LiberisTests.pdb
 C:\Users\aleja\Source\Repos\Ifritzz\liberis-specflow\LiberisTests\obj\Debug\netcoreapp3.1\LiberisTests.genruntimeconfig.cache
+C:\Users\aleja\Source\Repos\Ifritzz\liberis-specflow\LiberisTests\obj\Debug\netcoreapp3.1\LiberisTests.csproj.AssemblyReference.cache

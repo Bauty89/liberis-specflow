@@ -2,22 +2,26 @@
 using LiberisTests.PageObject;
 using FluentAssertions;
 using TechTalk.SpecFlow;
+using OpenQA.Selenium;
 
 namespace LiberisTests.Steps
 {
     [Binding]
     public class GetADemoStep
     {
+
+        IWebDriver driver;
+
+        private readonly ScenarioContext _scenarioContext;
+
         private readonly LiberisPageObject liberisPageObject;
+        public GetADemoStep(ScenarioContext scenarioContext) => _scenarioContext = scenarioContext;
 
-        public GetADemoStep(BrowserDriver browserDriver)
+        [Given("I navigate to Get a demo page in (.*)")]
+        public void GivenINavigateToGetaDemo(string url)
         {
-            liberisPageObject = new LiberisPageObject(browserDriver.Current);
-        }
-
-        [Given("I navigate to Get a demo page")]
-        public void GivenINavigateToGetaDemo()
-        {
+            driver = _scenarioContext.Get<BrowserDriver>("BrowserDriver").Setup();
+            driver.Url = url;
             liberisPageObject.ClickGetADemoHome();
         }
 

@@ -19,15 +19,13 @@ namespace LiberisTests.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [TechTalk.SpecRun.FeatureAttribute("Get a demo in Liberis webpage", new string[] {
-            "Demo"}, SourceFile="Features\\GetADemo.feature", SourceLine=1)]
+    [TechTalk.SpecRun.FeatureAttribute("Get a demo in Liberis webpage", SourceFile="Features\\GetADemo.feature", SourceLine=0)]
     public partial class GetADemoInLiberisWebpageFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
-        private string[] _featureTags = new string[] {
-                "Demo"};
+        private string[] _featureTags = ((string[])(null));
         
 #line 1 "GetADemo.feature"
 #line hidden
@@ -36,8 +34,7 @@ namespace LiberisTests.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Get a demo in Liberis webpage", null, ProgrammingLanguage.CSharp, new string[] {
-                        "Demo"});
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Get a demo in Liberis webpage", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -73,13 +70,13 @@ namespace LiberisTests.Features
             testRunner.CollectScenarioErrors();
         }
         
-        [TechTalk.SpecRun.ScenarioAttribute("Get a demo with no type or partner selected", SourceLine=3)]
+        [TechTalk.SpecRun.ScenarioAttribute("Get a demo with no type or partner selected", SourceLine=2)]
         public virtual void GetADemoWithNoTypeOrPartnerSelected()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get a demo with no type or partner selected", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 4
+#line 3
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -99,13 +96,13 @@ this.ScenarioInitialize(scenarioInfo);
             else
             {
                 this.ScenarioStart();
-#line 5
- testRunner.Given("I navigate to Get a demo page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line 4
+ testRunner.Given("I navigate to Get a demo page in \'https://www.liberis.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 6
+#line 5
  testRunner.When("I click in Get a demo", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 7
+#line 6
  testRunner.Then("I will be prompted with \'Please select a type of partner\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
