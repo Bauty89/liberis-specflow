@@ -1,5 +1,24 @@
 # Liberis Specflow Demo
 
+## Approach
+
+Test is defined following the POM model to be scalable. Actions and information retrieved from the website are taken in the PageObject class and used from the StepDefinitions class.
+
+## Test created
+
+```gherkin
+Feature: Get a demo in Liberis webpage
+
+Scenario: Get a demo with no type or partner selected
+	Given I navigate to Get a demo page in 'https://www.liberis.com'
+	When I click in Get a demo
+	Then I will be prompted with 'Please select a type of partner'
+```
+Test defines the url, which is passed as string to the Given method implemented in the step definitions, and also defines the expected result as string passed to the Then method to assert against the string retrieved from the website.
+
+## Execution
+
+To execute, just import this repository with Visual Studio, build the project, and execute the tests.
 
 # Manual Tests
 
